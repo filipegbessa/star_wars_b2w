@@ -1,0 +1,35 @@
+.page_center {
+  max-width: $pageWidth;
+  margin: auto;
+}
+
+.layout_flex {
+  display: flex;
+}
+
+.fakeImg {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  display: block;
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: $layout-xl) {}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $layout-lg) {
+  .page_center {
+    padding: 0 10px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $layout-md) {
+  .page_center {
+    padding: 0 20px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $layout-sm) {}

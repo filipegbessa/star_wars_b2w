@@ -1,0 +1,44 @@
+header {
+  .logo {
+    background-image: url("./../../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    width: 300px;
+    margin-bottom: -15px;
+    z-index: 10;
+    position: relative;
+    transition: all .3s;
+  }
+
+  .logo_mobile {
+    display: none;
+  }
+}
+
+@media (max-width: $layout-md) {
+  header {
+    .logo {
+      width: 250px;
+    }
+
+  }
+}
+
+@media (max-width: $layout-sm) {
+  header {
+    .logo {
+      display: none;
+    }
+
+    .logo_mobile {
+      background-image: url("./../../img/logo-mobile.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      margin-bottom: 30px;
+      width: 150px;
+    }
+  }
+}

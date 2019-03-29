@@ -1,0 +1,94 @@
+.sw-planet_info {
+  font-size: $font-size-sm;
+  line-height: $font-line-height-sm;
+  background-color: $color-white;
+  padding: 10px;
+  border-bottom: 2px solid $color-blue;
+
+  h1 {
+    font-size: $font-size-xl;
+    line-height: $font-line-height-xl;
+    color: $color-grey-3;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $color-grey;
+    margin-bottom: 20px;
+    font-weight: $font-weight-md;
+
+    i {
+      color: $color-blue;
+      opacity: $opacity-semi-opaque;
+      margin-top: -4px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .next {
+    position: absolute;
+    bottom: -52px;
+    right: 0;
+  }
+
+  li {
+    font-size: $font-size-xs;
+    line-height: $font-line-height-xs;
+    display: block;
+    padding-bottom: 5px;
+    color: $color-grey-2;
+    width: 100%;
+
+    small {
+      text-align: right;
+      display: block;
+      padding-top: 5px;
+      font-size: $font-size-xxs;
+    }
+  }
+
+  .movies {
+    padding-top: 10px;
+    justify-content: space-between;
+
+    [class*="mov_"] {
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      width: 120px;
+
+      &.mov_1 {
+        background-image: url("./../../img/mov-1.png");
+      }
+
+      &.mov_2 {
+        background-image: url("./../../img/mov-2.png");
+      }
+
+      &.mov_3 {
+        background-image: url("./../../img/mov-3.png");
+      }
+
+      &.mov_4 {
+        background-image: url("./../../img/mov-4.png");
+      }
+
+      &.mov_5 {
+        background-image: url("./../../img/mov-5.png");
+      }
+
+      &.mov_6 {
+        background-image: url("./../../img/mov-6.png");
+      }
+
+      &.mov_7 {
+        background-image: url("./../../img/mov-7.png");
+      }
+    }
+
+  }
+}
+
+@media (max-width: $layout-sm) {
+  .sw-planet_info {
+    border-radius: 5px 5px 0 0;
+  }
+}

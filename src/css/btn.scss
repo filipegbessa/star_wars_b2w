@@ -1,0 +1,33 @@
+.next {
+  height: 50px;
+  line-height: 50px;
+  background-color: $color-blue-2;
+  color: $color-white;
+  font-weight: $font-weight-sl;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: $font-size-xs;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:disabled {
+    opacity: $opacity-intense;
+  }
+
+  i {
+    color: $color-white;
+    font-size: $font-size-xs;
+    margin-top: -4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: $layout-sm) {
+  .next {
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+  }
+}
